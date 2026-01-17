@@ -1,75 +1,77 @@
-# 🧠 AI Dynamic Form Generator
+# IndusNet AI Project – Dynamic Form Generator
 
-An AI-powered full-stack application that generates **dynamic, functional web forms from natural language descriptions**.
-
-Users simply describe the type of form they need in plain English, and the system automatically creates and renders a working form in real time.
-
----
-
-## 🚀 What This Project Does
-
-Instead of manually coding forms, this application allows non-technical users (marketing, HR, operations, etc.) to:
-
-- Describe a form requirement in natural language
-- Instantly generate a complete, usable form
-- Collect structured and clean data with proper meta-tags
-
-### Example Input:
-I need a registration form for a fintech conference with
-Name, Mobile Number, Company Name and Business Pain Points
-
-### Output
-A fully functional form is generated instantly with appropriate input fields.
+## 📌 Overview
+This project is a **Flask-based AI application** designed to dynamically generate and manage forms using **Large Language Models (LLMs)**.  
+It focuses on clean backend architecture, prompt-based schema generation, and a simple frontend for user interaction.
 
 ---
 
-## ✨ Key Features
-
-- 📝 Natural language to form generation
-- 🤖 AI-powered schema creation using LLMs
-- ⚡ Dynamic form rendering (no hardcoded fields)
-- 🔄 Real-time frontend-backend communication
-- 🏷️ Structured and meta-tagged data output
-- 🌐 Simple and clean user interface
+## 🚀 Features
+- Dynamic form generation using LLM prompts
+- Flask backend with modular Python files
+- Secure handling of environment variables
+- Scalable project structure suitable for production
 
 ---
 
-## 🛠️ Tech Stack
-
-### Frontend
-- React (Vite)
-- JavaScript
-- HTML & CSS
-
-### Backend
-- Node.js
-- Express.js
-- dotenv
-
-### AI / LLM
-- OpenRouter API
-- DeepSeek / GPT-based free model
+## 🛠 Tech Stack
+- **Backend:** Python, Flask  
+- **AI / LLM:** Prompt-based schema generation  
+- **Frontend:** HTML, JavaScript  
+- **Environment Management:** Python Virtual Environment  
+- **Version Control:** Git & GitHub  
 
 ---
 
-## 🏗️ Project Structure
+## 📁 Project Structure
+AI PROJECT
+│── static/
+│ └── script.js
+│── templates/
+│ └── index.html
+│── app.py
+│── llm.py
+│── schema_prompt.py
+│── requirements.txt
+│── .gitignore
+│── README.md
 
-ai-dynamic-form-generator/
-│
-├── backend/
-│ ├── server.js
-│ ├── llm.js
-│ ├── schemaPrompt.js
-│ ├── package.json
-│ └── .env
-│
-├── frontend/
-│ ├── src/
-│ │ ├── App.jsx
-│ │ ├── FormRenderer.jsx
-│ │ ├── api.js
-│ │ └── main.jsx
-│ ├── index.html
-│ └── package.json
-│
-└── README.md
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Arpan123-alt-png/indusnet-project-update.git
+cd indusnet-project-update
+Create Virtual Environment
+python -m venv venv
+
+
+Activate:
+
+Windows
+
+venv\Scripts\activate
+
+
+Mac/Linux
+
+source venv/bin/activate
+
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+
+4️⃣ Set Environment Variables
+
+Create a .env file:
+
+OPENAI_API_KEY=your_api_key_here
+
+▶️ Run the Application
+python app.py
+
+
+The app will run on:
+
+http://127.0.0.1:5000/
